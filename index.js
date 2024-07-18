@@ -8,8 +8,8 @@ const app = express()
 app.use(json())
 app.disable('x-powered-by')
 
-app.use('/user', customRouter)
+app.use('/', customRouter())
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`)
+  console.log(`server listening on port http://localhost:${PORT}`)
 })

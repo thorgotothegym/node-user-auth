@@ -4,7 +4,7 @@ export const customRouter = () => {
   const userRouter = Router()
 
   userRouter.post('/login', (req, res) => {
-    res.send('hello user/login')
+    res.json({ name: 'dummy' })
   })
 
   return userRouter
